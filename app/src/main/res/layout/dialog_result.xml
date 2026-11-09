@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/rPofi"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:contentDescription="Pofi"
+        android:src="@drawable/pofi_happy" />
+
+    <TextView
+        android:id="@+id/rTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/ink"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:letterSpacing="0.1"
+        android:textSize="28sp" />
+
+    <FrameLayout
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/rRing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorSize="120dp"
+            app:trackColor="@color/outline"
+            app:trackCornerRadius="6dp"
+            app:trackThickness="11dp" />
+
+        <TextView
+            android:id="@+id/rPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/ink"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/muted"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rSay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/ink"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rRetry"
+        style="@style/App.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Bilemediklerimi tekrar et"
+        app:icon="@drawable/ic_replay" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rDone"
+        style="@style/App.BigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Bitir" />
+</LinearLayout>

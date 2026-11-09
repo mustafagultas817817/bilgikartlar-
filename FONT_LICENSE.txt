@@ -1,0 +1,3 @@
+Poppins yazı tipi: Copyright 2020 The Poppins Project Authors (Indian Type Foundry).
+SIL Open Font License, Version 1.1 ile lisanslıdır: https://openfontlicense.org
+Uygulamayla birlikte ücretsiz olarak dağıtılabilir.
